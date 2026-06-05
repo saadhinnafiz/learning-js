@@ -1,19 +1,13 @@
-//getting familiar with using comments in JavaScript//
+//interactive activity: user name and favourite hobby//
 
-//this program calculates the area of a rectangle//
+//declare a variable for the user's name//
+const name = "Saadhin Ali Nafiz";
 
-//length of the rectangle//
-const length = 12;
+//declare a variable for the user's favourite hobby//
+const hobby = "playing pvp games";
 
-//width of the rectangle//
-const width = 2;
+/* This program will display a message that includes 
+users name and their favourite hobby to create 
+an introduction message */
 
-/* 
-calculate area by:
-Multiplying length and width
-*/
-
-const area = length * width;
-
-//display the area of the rectangle//
-console.log("The area of the rectangle is: " + area);
+console.log(`${name} loves ${hobby}.`);
