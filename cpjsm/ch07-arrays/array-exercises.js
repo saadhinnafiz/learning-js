@@ -24,3 +24,29 @@ console.log(passedNumber);
 
 const highDistinction = students.find((student) => student.grade >= 90);
 console.log(highDistinction);
+// Exercise 2 — Working with Numbers
+
+const transactions = [150, -50, 200, -75, 300, -100, 50];
+
+// Do the following:
+
+// Filter out only the deposits (positive numbers)
+// Filter out only the withdrawals (negative numbers)
+// Calculate the total of all deposits using reduce
+// Calculate the total of all withdrawals using reduce
+// Calculate the final balance (total deposits + total withdrawals)
+
+const deposit = transactions.filter((number) => number > 0);
+console.log(deposit);
+
+const withdrawals = transactions.filter((number) => number < 0);
+console.log(withdrawals);
+
+const totalDeposit = deposit.reduce((acc, curr) => acc + curr, 0);
+console.log(totalDeposit);
+
+const totalWithdraw = withdrawals.reduce((acc, curr) => acc + curr, 0);
+console.log(totalWithdraw);
+
+const balance = totalDeposit + totalWithdraw;
+console.log(balance);
